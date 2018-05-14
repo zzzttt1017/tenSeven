@@ -53,6 +53,7 @@
     "mongoose": "^4.13.3",
     "morgan": "^1.9.0",
     "nodemailer": "^4.4.0",
+    "npm": "^6.0.1",
     "nprogress": "^0.2.0",
     "qiniu": "^7.1.1",
     "qr-image": "^3.2.0",
