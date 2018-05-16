@@ -158,7 +158,7 @@
             }
 
             return {
-                title: title + ' | ' + siteName,
+                title: title === '首页' ? siteName : title + ' | ' + siteName,
                 meta: [{
                         vmid: 'description',
                         name: 'description',

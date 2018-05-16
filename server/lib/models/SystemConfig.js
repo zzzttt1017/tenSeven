@@ -14,9 +14,9 @@ var SystemConfigSchema = new Schema({
         'default': shortid.generate
     },
     date: { type: Date, default: Date.now },
-    siteName: { type: String, default: '前端开发俱乐部' },
-    siteDomain: { type: String, default: 'http://www.html-js.cn' },
-    siteDiscription: { type: String, default: '前端开发' },
+    siteName: { type: String, default: '十七 文创社区' },
+    siteDomain: { type: String, default: '' },
+    siteDiscription: { type: String, default: '文字,创作,社区' },
     siteKeywords: String,
     siteEmailServer: String,
     siteEmail: String,

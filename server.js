@@ -190,9 +190,9 @@ app.get(['/', '/page/:current(\\d+)?', '/:cate1?___:typeId?/:current(\\d+)?',
         }
 
         const context = {
-            title: '前端开发俱乐部',
-            description: '前端开发俱乐部',
-            keywords: 'doracms',
+            title: '十七 文创社区',
+            description: '在这里，你可以随手记录自己的生活，与朋友们分享图片、文字或是图文并茂的文章。我们相信，每个人都是生活中的艺术家，有着无穷的创造力。',
+            keywords: '文字,创作,社区',
             url: req.url,
             cookies: req.cookies,
             env: process.env.NODE_ENV

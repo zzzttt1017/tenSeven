@@ -8,7 +8,7 @@
         <el-col :xs="20" :sm="10" :md="8" :lg="8" :xl="6">
           <div class="admin-logo-title">
             <h3>
-              <b style="color:#1D8CE0">Dora</b>CMS</h3>
+              <b style="color:#1D8CE0">十七</b>文创社区</h3>
           </div>
           <div class="login-container">
             <el-form :model="adminLoginFormData" :rules="rules" ref="ruleForm" label-width="0px" class="loginForm">

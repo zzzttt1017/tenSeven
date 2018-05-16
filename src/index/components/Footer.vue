@@ -2,15 +2,15 @@
     <footer class="footer">
         <div class="container text-left" v-once>
             <ul>
-                <li>自豪的采用&nbsp;
-                    <a href="https://github.com/doramart/DoraCMS" rel="nofollow" target="_blank" title="代码在这里">{{codeVersion}}
-                    </a>&nbsp;Copyright (c) 2017 &nbsp;
+                <li>
+                    Copyright (c) 2018 &nbsp; 
+                    <a href="https://github.com/zzzttt1017/tenseven" rel="nofollow" target="_blank" title="">{{codeVersion}}</a>
+                    &nbsp;All Rights Reserved
+                </li>
+                <li class="sitemap">
                     <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">
                         {{systemConfig.data[0].registrationNo}}
-                    </a> All Rights Reserved</li>
-                <li class="sitemap">
-                    <router-link to="/sitemap.html" class="">站点地图</router-link>&nbsp;应用案例:
-                    <a href="http://www.dailyads.cn" target="_blank">每日一广告</a>&nbsp;
+                    </a>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@ export default {
       systemConfig: "global/footerConfigs/getSystemConfig"
     }),
     codeVersion() {
-      return "DoraCMS " + packageJson.version;
+      return "十七 文创社区 " + packageJson.version;
     }
   }
 };
