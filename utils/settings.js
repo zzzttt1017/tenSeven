@@ -5,10 +5,10 @@
 
 module.exports = {
 
-	session_secret: 'doracms', // 务必修改
-	auth_cookie_name: 'doracms',
+	session_secret: 'tenseven', // 务必修改
+	auth_cookie_name: 'tenseven',
 	cache_maxAge: Math.floor(Date.now() / 1000) + 24 * 60 * 60, //1 hours
-	serverPort: 8080,
+	serverPort: 8017,
 
 	// 密码盐
 	encrypt_key: 'dora',

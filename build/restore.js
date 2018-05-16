@@ -3,7 +3,7 @@ require('shelljs/global');
 
 const setting = require("../utils/settings");
 
-const name = "DoraDbData";
+const name = "tenSevenDbData";
 const time = ".20171117";
 if(setting.HOST.match(/127.0.0.1|localhost/)){
     exec(`mongorestore  --gzip --archive=./data/${name + time}.gz `).stdout;
