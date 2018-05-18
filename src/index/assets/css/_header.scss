@@ -2,7 +2,12 @@
 .drop-menu {
     width: 96%;
 }
-
+.header .header-main .header-nav .el-dropdown {
+    cursor: pointer;
+    &:focus{
+        outline: none
+    }
+}
 .header {
     position: fixed;
     left: 0;
@@ -31,11 +36,11 @@
             }
         }
         .header-nav {
-            font-size: 15px;
+            font-size: 18px;
             float: left;
             width: 100%;
             .el-dropdown {
-                font-size: 15px;
+                font-size: 18px;
                 color: #333333;
             }
             ul {

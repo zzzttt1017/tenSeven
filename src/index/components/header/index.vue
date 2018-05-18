@@ -11,7 +11,7 @@
                         <el-col :xs="7" :sm="0" :md="0" :lg="0" :xl="0">
                           <el-dropdown trigger="click">
                           <el-button class="toggle-menu" size="mini" plain><i class="fa fa-align-justify"></i></el-button>
-                          <el-dropdown-menu class="drop-menu" slot="dropdown">
+                          <el-dropdown-menu class="drop-menu" slot="dropdown" show-timeout="0" style="cursor:point">
                             <el-dropdown-item v-for="(nav,index) in headerNav" :key="index" v-once>
                                 <router-link :to="{path: '/'+nav.defaultUrl+ '___'+nav._id}">{{nav.name}}</router-link>
                             </el-dropdown-item>
@@ -67,7 +67,7 @@
                               </el-dropdown-menu>
                             </el-dropdown>
                             </li>
-                            <li :class="{active : $route.fullPath == '/cmscase___SkCL09aCb'}"><router-link :to="{path: '/cmscase___SkCL09aCb'}">应用案例</router-link></li>
+                            <li :class="{active : $route.fullPath == '/cmscase___SkCL09aCb'}"><router-link :to="{path: '/cmscase___SkCL09aCb'}">关于我</router-link></li>
                           </ul>
                         </nav>
                     </el-col>

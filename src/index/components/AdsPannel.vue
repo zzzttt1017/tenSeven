@@ -13,7 +13,7 @@
                             <h3>
                                 <a :href="item.link" target="_blank"><img :height="ads.data.height+'px'" :src="item.sImg" :alt="item.alt" /></a>
                             </h3>
-                            <span>{{item.alt }}</span>
+                            <span>{{ item.alt }}</span>
                         </el-carousel-item>
                     </el-carousel>
                     </div>

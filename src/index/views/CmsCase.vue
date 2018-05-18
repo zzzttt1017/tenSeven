@@ -8,13 +8,13 @@
                 <el-col :xs="22" :sm="22" :md="22" :lg="22" :xl="14" >
                     <div class="case-list">
                       <h3>
-                          这些站点在用DoraCMS：
+                          asdas
                           <el-button-group>
                             <el-button size="mini" @click="getToStar" type="primary" plain icon="el-icon-star-on">Star</el-button>
                             <el-button size="mini" @click="getToStar" style="color:#2D2F33" plain>{{cmsStar}}</el-button>
                           </el-button-group>              
                       </h3>
-                      <AdsPannel id="BkxSmqcaAZ" />
+                      <!-- <AdsPannel id="BkxSmqcaAZ" /> -->
                       <div style="clear:both"></div>
                     </div>
                 </el-col>

@@ -1,7 +1,7 @@
 {
-  "name": "doracms",
-  "version": "2.0.5",
-  "description": "基于nodejs,express,vue2 内容管理系统.",
+  "name": "tenseven",
+  "version": "2.0.1",
+  "description": "基于nodejs,express,vue2 内的文字创作社区.",
   "keywords": [
     "vue",
     "vuex",
@@ -9,7 +9,7 @@
     "webpack",
     "server-side"
   ],
-  "author": "dora <admin@html-js.cn>",
+  "author": "zt@somecat.cn",
   "license": "MIT",
   "scripts": {
     "init": " node build/restore",
