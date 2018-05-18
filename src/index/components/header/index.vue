@@ -58,7 +58,7 @@
                             <li>
                               <el-dropdown size="medium">
                               <span class="el-dropdown-link">
-                                文章分类<i class="el-icon-arrow-down el-icon--right"></i>
+                                专题<i class="el-icon-arrow-down el-icon--right"></i>
                               </span>
                               <el-dropdown-menu slot="dropdown">
                                 <el-dropdown-item v-for="(nav,index) in headerNav" :key="index" v-once>

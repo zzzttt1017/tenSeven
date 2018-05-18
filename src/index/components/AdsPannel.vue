@@ -13,13 +13,14 @@
                             <h3>
                                 <a :href="item.link" target="_blank"><img :height="ads.data.height+'px'" :src="item.sImg" :alt="item.alt" /></a>
                             </h3>
+                            <span>{{item.alt }}</span>
                         </el-carousel-item>
                     </el-carousel>
                     </div>
                     <!-- 橱窗展示 -->
                     <div v-else>
                     <el-row :gutter="20">
-                        <el-col class="case-item" :xs="12" :sm="8" :md="6" :lg="6" :xl="6" v-for="(item,index) in ads.data.items" :key="item._id">
+                        <el-col class="case-item" :xs="12" :sm="8" :md="6" :lg="6" :xl="6" v-for="item in ads.data.items" :key="item._id">
                         <el-card :body-style="{ padding: '0px' }">
                             <div style="padding:14px 14px 5px;text-align:center;cursor:point">
                                 <a :href="item.link" target="_blank"><img :src="item.sImg" class="image" :alt="item.alt"></a>
