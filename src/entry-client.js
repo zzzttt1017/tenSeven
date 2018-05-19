@@ -2,7 +2,7 @@ import Vue from 'vue'
 import { createApp } from './app'
 import ProgressBar from './index/components/ProgressBar.vue'
 
-import '../node_modules/element-ui/lib/theme-chalk/index.css'
+import '../theme/index.css'
 import '../node_modules/element-ui/lib/theme-chalk/display.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css'
 

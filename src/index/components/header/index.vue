@@ -11,7 +11,7 @@
                         <el-col :xs="7" :sm="0" :md="0" :lg="0" :xl="0">
                           <el-dropdown trigger="click">
                           <el-button class="toggle-menu" size="mini" plain><i class="fa fa-align-justify"></i></el-button>
-                          <el-dropdown-menu class="drop-menu" slot="dropdown" show-timeout="0" style="cursor:point">
+                          <el-dropdown-menu class="drop-menu" slot="dropdown" show-timeout="0">
                             <el-dropdown-item v-for="(nav,index) in headerNav" :key="index" v-once>
                                 <router-link :to="{path: '/'+nav.defaultUrl+ '___'+nav._id}">{{nav.name}}</router-link>
                             </el-dropdown-item>
@@ -32,7 +32,7 @@
                         <el-col :xs="10" :sm="24" :md="24" :lg="24" :xl="24">
                           <div class="header-logo">
                               <router-link :to="{path: '/'}">
-                                  <img src="../../assets/logo.png" />
+                                  <img src="../../assets/long-logo.png" />
                               </router-link>
                           </div>
                         </el-col>
