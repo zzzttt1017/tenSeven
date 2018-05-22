@@ -27,7 +27,7 @@
                                     <div>
                                         <div class="cate-pannle-menu" v-show="typeId == 'indexPage'">
                                             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                                            <el-menu-item index="1">最新文档</el-menu-item>
+                                            <el-menu-item index="1">新文</el-menu-item>
                                             </el-menu>
                                         </div>
                                         <div class="article-list">

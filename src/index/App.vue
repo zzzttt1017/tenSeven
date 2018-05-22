@@ -4,10 +4,10 @@
 <template>
     <div id="app">
         <MyHeader v-if="$route.meta.typeId != 'adminlogin'" />
-        <transition name="fade" mode="out-in">
+        <transition :name="transitionName" mode="out-in">
             <router-view :key="$route.fullPath" v-if="$route.meta.notKeepAlive" class="view"></router-view>
         </transition>
-        <transition name="fade" mode="out-in">
+        <transition :name="transitionName" mode="out-in">
             <keep-alive>
                 <router-view :key="$route.fullPath" v-if="!$route.meta.notKeepAlive" class="view"></router-view>
             </keep-alive>
@@ -28,7 +28,9 @@ export default {
     MyFooter
   },
   data() {
-    return {};
+    return {
+      transitionName:''
+    };
   },
   computed: {
     ...mapGetters({
@@ -54,6 +56,15 @@ export default {
     },
     handleClickHeaderBack() {
       this.$router.go(-1);
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      if (to.path === '/') {
+        this.transitionName = 'slide-right'
+      } else {
+        this.transitionName = 'slide-left'
+      }
     }
   }
 };

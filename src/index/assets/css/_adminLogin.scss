@@ -1,6 +1,7 @@
 .adlogin {
     background-image: url('assets/images/login_bg.jpg');
-    background-size: cover;
+    background-size: 100%;
+    background-position: -10% 0%;
     background-repeat: no-repeat;
     body {
         background: none;
@@ -18,7 +19,7 @@
 
 .admin-login-form {
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 220px;
     margin-bottom: 100px;
     .el-input-group__prepend {
         padding: 0 10px;
@@ -26,7 +27,7 @@
     .submit-btn {
         text-align: center;
         .el-button {
-            width: 100%;
+            width: auto;
         }
     }
     .imageCode {

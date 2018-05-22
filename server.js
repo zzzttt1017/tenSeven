@@ -82,7 +82,7 @@ if (isProd) {
 // 设置静态文件缓存时间
 const serve = (path, cache) => express.static(resolve(path), { maxAge: cache && isProd ? 60 * 60 * 24 * 30 : 0 })
 
-// 引用 esj 模板引擎
+// 引用 ejs 模板引擎
 app.set('views', path.join(__dirname, 'dist'))
 app.engine('.html', require('ejs').__express)
 app.set('view engine', 'ejs')
@@ -114,7 +114,7 @@ if (settings.openRedis) {
     sessionConfig = {
         secret: settings.encrypt_key,
         cookie: {
-            maxAge: 1000 * 60 * 10
+            maxAge: 1000 * 60 * 100
         },
         resave: false,
         saveUninitialized: true,

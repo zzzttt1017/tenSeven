@@ -7,8 +7,7 @@
         </el-col>
         <el-col :xs="20" :sm="10" :md="8" :lg="8" :xl="6">
           <div class="admin-logo-title">
-            <h3>
-              <b style="color:#1D8CE0">十七</b>文创社区</h3>
+ <img src="../assets/long-logo.png" />
           </div>
           <div class="login-container">
             <el-form :model="adminLoginFormData" :rules="rules" ref="ruleForm" label-width="0px" class="loginForm">
